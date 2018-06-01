@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Terms</key>
+	<dict>
+		<key>bend(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot de se pencher.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 1 et 40. La valeur par défaut est 4. </string>
+				<key>Title</key>
+				<string>bend(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>bendAndTwist(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot de se pencher et de se tourner.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 1 et 40. La valeur par défaut est 4. </string>
+				<key>Title</key>
+				<string>bendAndTwist(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>crasyDance(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot d’effectuer des pas de danse déjantés.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 5 et 200. La valeur par défaut est 10. </string>
+				<key>Title</key>
+				<string>crasyDance(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>happy(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot d’effectuer une danse enjouée.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 1 et 10. La valeur par défaut est 4. </string>
+				<key>Title</key>
+				<string>happy(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveBackward(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot de se déplacer vers l’arrière.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 1 et 40. La valeur par défaut est 4. </string>
+				<key>Title</key>
+				<string>moveBackward(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveBody(beats:Double, moves:()-&gt;Void)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Effectue simultanément tous les mouvements du servomoteur de MeeBot indiqués dans le paramètre mouvements.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est double et comprise entre 0,25 et 20. La valeur par défaut est 1.\
+**mouvements** : une zone contenant toutes les rotations du servomoteur à effectuer simultanément. Il s’agit de l’endroit où tu utilises de commandes telles que `moveLeftArm()`, `moveRightLeg()` et ainsi de suite, afin d’indiquer à MeeBot de bouger son corps. Cette zone ne prend aucun paramètre et ne possède aucune valeur de retour. Ce paramètre doit contenir une valeur.</string>
+				<key>Title</key>
+				<string>moveBody(beats:Double, moves:()-&gt;Void)</string>
+			</dict>
+		</dict>
+		<key>moveBody(moves:()-&gt;Void)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Effectue simultanément tous les mouvements du servomoteur de MeeBot indiqués dans le paramètre mouvements.\
+**mouvements** : une zone contenant toutes les rotations du servomoteur à effectuer simultanément. Il s’agit de l’endroit où tu utilises de commandes telles que `moveLeftArm()`, `moveRightLeg()` et ainsi de suite, afin d’indiquer à MeeBot de bouger son corps. Cette zone ne prend aucun paramètre et ne possède aucune valeur de retour. Ce paramètre doit contenir une valeur.</string>
+				<key>Title</key>
+				<string>moveBody(moves:()-&gt;Void)</string>
+			</dict>
+		</dict>
+		<key>moveForward(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot de se déplacer vers l’avant.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 0,25 et 20. La valeur par défaut est 4. </string>
+				<key>Title</key>
+				<string>moveForward(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveLeftArm(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Fais pivoter le servomoteur du bras gauche de MeeBot selon l’angle indiqué.\
+**angle** : une double valeur comprise entre -110 et 75 indiquant l’angle de rotation, en degrés, du servomoteur du bras gauche.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 0,25 et 20. La valeur par défaut est 1. </string>
+				<key>Title</key>
+				<string>moveLeftArm(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveLeftFoot(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Fais pivoter le servomoteur du pied gauche de MeeBot selon l’angle indiqué.\
+**angle** : une double valeur comprise entre -65 et 75 indiquant l’angle de rotation, en degrés, du servomoteur du pied gauche.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 0,25 et 20. La valeur par défaut est 1. </string>
+				<key>Title</key>
+				<string>moveLeftFoot(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveLeftLeg(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Fais pivoter le servomoteur de la jambe gauche de MeeBot selon l’angle indiqué.\
+**angle** : une double valeur comprise entre -45 et 45 indiquant l’angle de rotation, en degrés, du servomoteur de la jambe gauche.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 0,25 et 20. La valeur par défaut est 1.</string>
+				<key>Title</key>
+				<string>moveLeftLeg(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveRightArm(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Fais pivoter le servomoteur du bras droit de MeeBot selon l’angle indiqué.\
+**angle** : une double valeur comprise entre -75 et 110 indiquant l’angle de rotation, en degrés, du servomoteur du bras droit.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 1,25 et 50. La valeur par défaut est 5. </string>
+				<key>Title</key>
+				<string>moveLeftLeg(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveRightFoot(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Fais pivoter le servomoteur du pied droit de MeeBot selon l’angle indiqué.\
+**angle** : une double valeur comprise entre -65 et 75 indiquant l’angle de rotation, en degrés, du servomoteur du pied droit.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 0,25 et 20. La valeur par défaut est 1. </string>
+				<key>Title</key>
+				<string>moveRightFoot(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveRightLeg(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Fais pivoter le servomoteur de la jambe droite de MeeBot selon l’angle indiqué.\
+**angle** : une double valeur comprise entre -45 et 45 indiquant l’angle de rotation, en degrés, du servomoteur de la jambe droite.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 1,25 et 50. La valeur par défaut est 5. </string>
+				<key>Title</key>
+				<string>moveRightLeg(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveToLeft(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot de se déplacer vers la gauche.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 0,5 et 10. La valeur par défaut est 2. </string>
+				<key>Title</key>
+				<string>moveToLeft(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveToRight(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot de se déplacer vers la droite.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 1 et 40. La valeur par défaut est 2. </string>
+				<key>Title</key>
+				<string>moveToRight(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>raiseHands(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot de lever sa main.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 1,25 et 50. La valeur par défaut est 5. </string>
+				<key>Title</key>
+				<string>raiseHands(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>reset()</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Rétablis MeeBot sur sa position initiale. Toutes ses articulations doivent décrire un angle de zéro</string>
+				<key>Title</key>
+				<string>reset()</string>
+			</dict>
+		</dict>
+		<key>setBpmOfMySong(bpm:UInt)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Définis le BPM de ton propre morceau. Cette fonction accepte un nombre entier compris entre 30 et 500.</string>
+				<key>Title</key>
+				<string>setBpmOfMySong(bpm:UInt)</string>
+			</dict>
+		</dict>
+		<key>shake(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot de remuer son corps.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 1 et 40. La valeur par défaut est 4. </string>
+				<key>Title</key>
+				<string>shake(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>skip(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot de sautiller.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 1 et 40. La valeur par défaut est 4. </string>
+				<key>Title</key>
+				<string>skip(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>split(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot de faire un grand écart.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 1 et 40. La valeur par défaut est 4. </string>
+				<key>Title</key>
+				<string>split(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>stepAndShake(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot de faire un pas en avant et de faire bouger sa main.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 1 et 40. La valeur par défaut est 5. </string>
+				<key>Title</key>
+				<string>stepAndShake(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>swagger(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot de sautiller.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 1,25 et 50. La valeur par défaut est 5. </string>
+				<key>Title</key>
+				<string>swagger(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>twist(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot de faire tourner ses mains et son corps.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 1 et 40. La valeur par défaut est 4. </string>
+				<key>Title</key>
+				<string>twist(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>wave(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Indique à MeeBot de faire un signe de la main.\
+**battements** : la durée totale des mouvements, mesurée en battements. La valeur de ce paramètre est un double compris entre 1 et 40. La valeur par défaut est 4. </string>
+				<key>Title</key>
+				<string>wave(beats:Double)</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

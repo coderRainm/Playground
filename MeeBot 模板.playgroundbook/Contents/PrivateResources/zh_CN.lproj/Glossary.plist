@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Terms</key>
+	<dict>
+		<key>bend(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 弯曲身体。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 1 到 40。默认值为 4。</string>
+				<key>Title</key>
+				<string>bend(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>bendAndTwist(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 弯曲和扭动身体。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 1 到 40。默认值为 4。</string>
+				<key>Title</key>
+				<string>bendAndTwist(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>crasyDance(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 来一段疯狂的舞步。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 5 到 200。默认值为 10。</string>
+				<key>Title</key>
+				<string>crasyDance(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>happy(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 跳一支欢快的舞。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 1 到 10。默认值为 4。</string>
+				<key>Title</key>
+				<string>happy(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveBackward(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 向后移。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 1 到 40。默认值为 4。</string>
+				<key>Title</key>
+				<string>moveBackward(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveBody(beats:Double, moves:()-&gt;Void)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>一次性执行舞步参数中指定的所有 MeeBot 的伺服舵机舞步。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 0.25 到 20。默认值为 1。\
+**moves**：包含待同时执行的伺服舵机转动的闭包。你可以在这里使用类似于 `moveLeftArm()`、`moveRightLeg()` 之类的命令移动 MeeBot 的身体。此闭包没有参数和返回值。此参数必须不为 NULL。</string>
+				<key>Title</key>
+				<string>moveBody(beats:Double, moves:()-&gt;Void)</string>
+			</dict>
+		</dict>
+		<key>moveBody(moves:()-&gt;Void)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>一次性执行舞步参数中指定的所有 MeeBot 的伺服舵机舞步。\
+**moves**：包含待同时执行的伺服舵机转动的闭包。你可以在这里使用类似于 `moveLeftArm()`、`moveRightLeg()` 之类的命令移动 MeeBot 的身体。此闭包没有参数和返回值。此参数必须不为 NULL。</string>
+				<key>Title</key>
+				<string>moveBody(moves:()-&gt;Void)</string>
+			</dict>
+		</dict>
+		<key>moveForward(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 向前移。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 0.25 到 20。默认值为 4。</string>
+				<key>Title</key>
+				<string>moveForward(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveLeftArm(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>将 MeeBot 的左臂伺服舵机转到指定角度。\
+**angle**：双精度浮点数，范围为 -110 到 75，指定左臂伺服舵机所转动的角度，以度数为单位。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 0.25 到 20。默认值为 1。</string>
+				<key>Title</key>
+				<string>moveLeftArm(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveLeftFoot(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>将 MeeBot 的左脚伺服舵机转到指定角度。\
+**angle**：双精度浮点数，范围为 -65 到 75，指定左脚伺服舵机所转动的角度，以度数为单位。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 0.25 到 20。默认值为 1。</string>
+				<key>Title</key>
+				<string>moveLeftFoot(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveLeftLeg(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>将 MeeBot 的左腿伺服舵机转到指定角度。\
+**angle**：双精度浮点数，范围为 -45 到 45，指定左腿伺服舵机所转动的角度，以度数为单位。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 0.25 到 20。默认值为 1。</string>
+				<key>Title</key>
+				<string>moveLeftLeg(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveRightArm(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>将 MeeBot 的右臂伺服舵机转到指定角度。\
+**angle**：双精度浮点数，范围为 -75 到 110，指定右臂伺服舵机所转动的角度，以度数为单位。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 1.25 到 50。默认值为 5。</string>
+				<key>Title</key>
+				<string>moveRightArm(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveRightFoot(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>将 MeeBot 的右脚伺服舵机转到指定角度。\
+**angle**：双精度浮点数，范围为 -65 到 75，指定右脚伺服舵机所转动的角度，以度数为单位。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 0.25 到 20。默认值为 1。</string>
+				<key>Title</key>
+				<string>moveRightFoot(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveRightLeg(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>将 MeeBot 的右腿伺服舵机转到指定角度。\
+**angle**：双精度浮点数，范围为 -45 到 45，指定右腿伺服舵机所转动的角度，以度数为单位。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 1.25 到 50。默认值为 5。</string>
+				<key>Title</key>
+				<string>moveRightLeg(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveToLeft(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 向左移。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 0.5 到 10。默认值为 2。</string>
+				<key>Title</key>
+				<string>moveToLeft(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveToRight(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 向右移。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 1 到 40。默认值为 2。</string>
+				<key>Title</key>
+				<string>moveToRight(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>raiseHands(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 举高双手。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 1.25 到 50。默认值为 5。</string>
+				<key>Title</key>
+				<string>raiseHands(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>reset()</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>将 MeeBot 设为初始姿势，它的所有关节角度为零</string>
+				<key>Title</key>
+				<string>reset()</string>
+			</dict>
+		</dict>
+		<key>setBpmOfMySong(bpm:UInt)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>设定自己歌曲的 BPM。此函数接受 30 到 500 之间的整数。</string>
+				<key>Title</key>
+				<string>setBpmOfMySong(bpm:UInt)</string>
+			</dict>
+		</dict>
+		<key>shake(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 摇摆身体。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 1 到 40。默认值为 4。</string>
+				<key>Title</key>
+				<string>shake(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>skip(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 跳跃。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 1 到 40。默认值为 4。</string>
+				<key>Title</key>
+				<string>skip(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>split(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 劈叉。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 1 到 40。默认值为 4。</string>
+				<key>Title</key>
+				<string>split(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>stepAndShake(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 向前迈步并摆手。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 1 到 40。默认值为 5。</string>
+				<key>Title</key>
+				<string>stepAndShake(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>swagger(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 大摇大摆地走动。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 1.25 到 50。默认值为 5。</string>
+				<key>Title</key>
+				<string>swagger(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>twist(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 扭动双手和身体。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 1 到 40。默认值为 4。</string>
+				<key>Title</key>
+				<string>twist(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>wave(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>让 MeeBot 挥挥手。\
+**beats**：舞步的总时长，按节拍计算。此参数的值是双精度浮点数，范围为 1 到 40。默认值为 4。</string>
+				<key>Title</key>
+				<string>wave(beats:Double)</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

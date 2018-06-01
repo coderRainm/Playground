@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Terms</key>
+	<dict>
+		<key>moveBody(moves:()-&gt;Void)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Perform all the MeeBot&apos;s servo motor moves specified inside the moves parameter at once.\
+**moves**:  A closure containing the servo motor rotations to be performed at the same time.  This is where you use commands like `moveLeftArm()`, `moveRightLeg()` etc to move MeeBot’s body. This closure takes no parameters and has no return value. This parameter must not be NULL.</string>
+				<key>Title</key>
+				<string>moveBody(moves:()-&gt;Void)</string>
+			</dict>
+		</dict>
+		<key>moveForward(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot to move forward.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 0.25 to 20. Default value is 4. </string>
+				<key>Title</key>
+				<string>moveForward(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveBackward(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot to move backward.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 1 to 40. Default value is 4. </string>
+				<key>Title</key>
+				<string>moveBackward(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveToLeft(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot to move to the left.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 0.5 to 10. Default value is 2. </string>
+				<key>Title</key>
+				<string>moveToLeft(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveToRight(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot to move to the right.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 1 to 40. Default value is 2. </string>
+				<key>Title</key>
+				<string>moveToRight(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>bend(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot bend its body.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 1 to 40. Default value is 4. </string>
+				<key>Title</key>
+				<string>bend(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>happy(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot perform a happy dance.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 1 to 10. Default value is 4. </string>
+				<key>Title</key>
+				<string>happy(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>split(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot to do a split.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 1 to 40. Default value is 4. </string>
+				<key>Title</key>
+				<string>split(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>skip(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot to skip.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 1 to 40. Default value is 4. </string>
+				<key>Title</key>
+				<string>skip(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>twist(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot to twist its hands and body.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 1 to 40. Default value is 4. </string>
+				<key>Title</key>
+				<string>twist(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>stepAndShake(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot to step forward and shake its hand.\
+**beats**:The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 1 to 40. Default value is 5. </string>
+				<key>Title</key>
+				<string>stepAndShake(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>bendAndTwist(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot to bend and twist its body.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 1 to 40. Default value is 4. </string>
+				<key>Title</key>
+				<string>bendAndTwist(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>shake(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot to shake its body.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 1 to 40. Default value is 4. </string>
+				<key>Title</key>
+				<string>shake(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>wave(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot to wave its hand.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 1 to 40. Default value is 4. </string>
+				<key>Title</key>
+				<string>wave(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>swagger(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot to swagger.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 1.25 to 50. Default value is 5. </string>
+				<key>Title</key>
+				<string>swagger(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>reset()</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Set MeeBot to the initial posture, all its joints angle would be zero</string>
+				<key>Title</key>
+				<string>reset()</string>
+			</dict>
+		</dict>
+		<key>raiseHands(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot to raise its hands.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 1.25 to 50. Default value is 5. </string>
+				<key>Title</key>
+				<string>raiseHands(beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveLeftArm(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Rotate MeeBot&apos;s left arm servo motor to specified angle.\
+**angle**: A Double value in the range -110 to 75 specifying the angle of rotation, in degrees, for the left arm servo motor.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 0.25 to 20. Default value is 1. </string>
+				<key>Title</key>
+				<string>moveLeftArm(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveRightArm(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Rotate MeeBot&apos;s right arm servo motor to specified angle.\
+**angle**: A Double value in the range -75 to 110 specifying the angle of rotation, in degrees, for the right arm servo motor.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 1.25 to 50. Default value is 5. </string>
+				<key>Title</key>
+				<string>moveRightArm(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveLeftLeg(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Rotate MeeBot&apos;s left leg servo motor to specified angle.\
+**angle**: A Double value in the range -45 to 45 specifying the angle of rotation, in degrees, for the left leg servo motor.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 0.25 to 20. Default value is 1.</string>
+				<key>Title</key>
+				<string>moveLeftLeg(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveRightLeg(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Rotate MeeBot&apos;s right leg servo motor to specified angle.\
+**angle**: A Double value in the range -45 to 45 specifying the angle of rotation, in degrees, for the right leg servo motor.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 1.25 to 50. Default value is 5. </string>
+				<key>Title</key>
+				<string>moveRightLeg(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveLeftFoot(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Rotate MeeBot&apos;s left foot servo motor to specified angle.\
+**angle**: A Double value in the range -65 to 75 specifying the angle of rotation, in degrees, for the left foot servo motor.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 0.25 to 20. Default value is 1. </string>
+				<key>Title</key>
+				<string>moveLeftFoot(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveRightFoot(angle:Int, beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Rotate MeeBot&apos;s right foot servo motor to specified angle.\
+**angle**: A Double value in the range -65 to 75 specifying the angle of rotation, in degrees, for the right foot servo motor.\
+**beats**: The total duration of the moves, measured in beats.  The value of this parameter is a Double in the range 0.25 to 20. Default value is 1. </string>
+				<key>Title</key>
+				<string>moveRightFoot(angle:Int, beats:Double)</string>
+			</dict>
+		</dict>
+		<key>moveBody(beats:Double, moves:()-&gt;Void)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Perform all the MeeBot&apos;s servo motor moves specified inside the moves parameter at once.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 0.25 to 20. Default value is 1.\
+**moves**:  A closure containing the servo motor rotations to be performed at the same time.  This is where you use commands like `moveLeftArm()`, `moveRightLeg()` etc to move MeeBot’s body. This closure takes no parameters and has no return value. This parameter must not be NULL.</string>
+				<key>Title</key>
+				<string>moveBody(beats:Double, moves:()-&gt;Void)</string>
+			</dict>
+		</dict>
+		<key>setBpmOfMySong(bpm:UInt)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Set the BPM of your own song. This function accept an Integer in the range 30 to 500.</string>
+				<key>Title</key>
+				<string>setBpmOfMySong(bpm:UInt)</string>
+			</dict>
+		</dict>
+		<key>crasyDance(beats:Double)</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tell MeeBot to perform some crazy dance moves.\
+**beats**: The total duration of the moves, measured in beats. The value of this parameter is a Double in the range 5 to 200. Default value is 10. </string>
+				<key>Title</key>
+				<string>crasyDance(beats:Double)</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
